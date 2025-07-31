@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c7fac7;
+   
+}
+
+
+/* navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+     background-color: #a1e5a1;
+   /* 000000000000000000000000000000000000000000000000 */
+}
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #00b300;
+    }
+    .nav-links{
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .nav-links a:hover{
+        
+        color: #00b300;
+    }
+    
+
+    .nav-links li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    
+    .nav-icons{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-icons {
+        display: flex;
+        gap: 15px;
+        font-size: 18px;
+        color: #00b300;
+        cursor: pointer;
+        
+    }
+    
+
+    .contact-btn {
+        background-color: #00b300;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding: 8px 20px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+
+
+    /* hero section */
+    .hero-section {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-between;
+        position: relative;
+        font-size: 20px;
+        
+    }
+      
+    .text-side {
+        width: 50%;
+         text-align: center;
+         margin-top: 160px;
+         
+         
+       
+    }
+
+   
+
+    .text-side h1 span {
+        color: #00b300;  
+    }
+
+    .text-side p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #555;
+        text-align: center;
+        
+       
+    }
+
+    .order-btn, .video-btn {
+        margin-right: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .order-btn {
+        background-color: #00b300;
+        color: white;
+    }
+
+    .video-btn {
+        background-color: lightgrey;
+    }
+
+    .image-side {
+        position: relative;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+    }
+
+    
+
+    .green-circle {
+        width: 450px;
+        height: 450px;
+        background-color: limegreen;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translatex(-25%);
+        z-index: -1;
+    
+    }
+
+    .girl-img {
+        width: 400px;
+        border-radius: 10px;
+        z-index: 1;
+        position: relative;
+        transform: translateX(25%);
+          
+      
+        
+    }
+
+    .label {
+        position: absolute;
+        top: 50px;
+        right :55%;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: rgb(226, 34, 34);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .pepper {
+        color: red;
+        font-size: 18px;
+        margin-left: 5px;
+        animation: shake 0.8s infinite;
+        
+    }
+
+    /* Food Cards */
+.food-cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+   transform: translateX(263%);
+   z-index: 2;
+ background-color: rgb(82, 124, 91);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+}
+
+.card :hover {
+    transform: scale(1.05);
+}
+
+.card img {
+  width: 50%;
+  border-radius: 1px;
+  margin-bottom: 1px;
+}
+
+.food-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.food-price {
+  color: #00b300;
+  font-weight: bold;
+}

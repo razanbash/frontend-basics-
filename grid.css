@@ -1,0 +1,162 @@
+
+ 
+ #navbar {
+    background-color: brown;
+    grid-area: nav; 
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0 20px;
+    gap: 20px;
+    border-radius: 25px;
+    
+    
+     
+}
+
+.nav a{
+   list-style: none;
+   text-align: center;
+   text-decoration: none;
+   display: flex;
+   gap: 20px;
+   margin: 0;
+   padding: 0;
+   color: black;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+
+
+#nav{
+     text-decoration: none;
+     color: black;
+      text-align: center;
+      list-style: none;
+      display:flex ;
+      gap: 20px;
+      margin-right:40px ;
+      color: black;
+    
+}
+
+.menu-grid-container{
+    background-color:rgb(151, 87, 87);
+    width: 100;
+    height: 100%;
+    grid-area: menu;
+    grid-template-rows:repeat(4,auto);
+    display: grid;
+    text-align: center;
+    padding: left;
+    border-radius: 40px;
+
+   
+}
+
+
+
+#main {
+    background-color: rgb(151, 87, 87);
+    width: 100;
+    height:  600px;
+    grid-area: main;
+    text-align: center;
+    border-radius: 40px;
+    vertical-align: middle;
+
+    
+    
+}
+
+#main a {
+   display: inline;
+   text-decoration:none;
+   color: white;
+   border-radius: 5px;
+
+}
+
+#footer{
+    background-color: brown;
+    width: 100;
+    height: 150px;
+    grid-area: footer;
+    text-align: center;
+     font-size: 35px;
+     border-radius: 40px;
+}
+
+#mainGrid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "nav nav nav"
+                          "menu main main"
+                          "menu footer footer";
+}
+
+
+
+@media (max-width:500px) {
+    #mainGrid {
+        grid-template-columns: auto auto;
+        margin-right: 3%;
+        font-size: 15px;
+        padding-left: 20px;
+        margin: 10px;
+        
+    }
+
+      .menu-grid-container {
+        width: 150px;
+      }
+
+      .footer {
+        font-size: 20px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        
+      }
+    
+}
+
+@media (min-width:500px) and (max-width:1024px){
+
+    #mainGrid {
+        grid-template-columns: auto auto;
+        margin-right: 3%;
+        font-size: 15px;
+        padding-left: 20px;
+        margin: 10px;
+
+}
+
+.menu-grid-container {
+        width: 150px;
+
+}
+
+.main {
+      font-size: 40px;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        
+       
+}
+
+}
