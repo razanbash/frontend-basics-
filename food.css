@@ -222,3 +222,91 @@ body {
   color: #00b300;
   font-weight: bold;
 }
+
+
+/* 500 < mobile */
+@media (max-width : 500px){
+
+    
+    
+    .navbar{
+        flex-direction: column;
+        
+        max-width: 150%;
+        width: 150%;
+        box-sizing: border-box;
+        padding: 15px;
+        font-size: 30px;
+        
+    }
+
+
+    .logo{
+        font-size: 45px;
+    }
+
+    .contact-btn{
+        font-size: 20px;
+    }
+
+    .navbar a{
+        margin: 5px 0;
+        display: block;
+        padding: 10px;
+        
+    }
+    .hero-section{
+        text-align: center;
+        padding: 20px;
+        font-size: 27px;
+    }
+    .text-side{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 20px;
+        padding-top: 80px;
+    }
+
+    .hero-section p {
+    font-size: 20px;
+    }
+
+    .food-cards{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        transform: translateX(50%);
+        text-align: center;
+       margin: -310px;
+        padding: 170px;
+        gap: 0;
+     
+        
+       
+        
+        /* will back here to fix */
+    }
+    .food-name{
+        width: 90%;
+        margin-left: 20PX auto;
+    }
+    .green-circle{
+        width: 340PX;
+        height: 315px;
+        border-radius: 50%;
+    }
+    img{
+        max-width: 310px;
+    }
+
+    .label{
+        padding: 2px 5px;
+        font-size: 20px;
+        position: absolute;
+        top: 150px;
+        left: 30px;
+      
+    }
+}
